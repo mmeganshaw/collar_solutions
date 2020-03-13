@@ -6,6 +6,13 @@ body {
 h1 {
     font-size: 4rem;
     font-weight: 900;
+    color: #4DC2BD;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #4DC2BD;
 }
 
 h3 {
@@ -22,7 +29,8 @@ h3 {
 
 .header-overlay {
     position: relative;
-    background: url('../images/overlay-02.png') no-repeat center center/cover;
+    background: url('../images/header-background.png') no-repeat center center/cover;
+    border-radius: 15px;
     height: 100%
 }
 
@@ -52,9 +60,9 @@ h3 {
 
 .blue-container {
     color: white;
-    background-color: #09424B;
+    background-color: #4DC2BD;
     border-radius: 10px;
-    box-shadow: 0 34px 38px 0 rgba(8, 63, 73, 0.6), 0 36px 50px 0 rgba(8, 63, 73, 0.6);
+    box-shadow: 0 34px 38px 0 rgba(77, 194, 189, 0.6), 0 36px 50px 0 rgba(77, 194, 189, 0.6);
     margin: 2rem;
 }
 
@@ -65,4 +73,11 @@ h3 {
     box-shadow: 0 34px 38px 0 rgba(8, 63, 73, 0.6), 0 36px 50px 0 rgba(8, 63, 73, 0.6);
     margin: 2rem;
     padding: 1rem;
+}
+
+.small-container {
+    position: relative;
+    background: url('../images/container-background-03.png') no-repeat center center/cover;
+    border-radius: 15px;
+    color: white;
 }
