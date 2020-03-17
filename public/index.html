@@ -294,7 +294,7 @@
     </div>
     <!-- form container -->
     <a name="contact"></a>
-    <div class="container center-align">
+    <div class="container center-align" id="form-container">
         <div class="row">
             <div class="col s12">
                 <h1>
@@ -346,7 +346,21 @@
 
 
 </body>
+
+
+<div class="section left-align" id="hidden-div">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h3 style="color: #4DC2BD;">Thank you for submitting your information.</h3>
+                <h5>We'll be in contact shortly.</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- footer -->
+
 <footer style="background-color: #4DC2BD;">
     <div class="container">
         <div class="row">
@@ -379,8 +393,6 @@
     $(document).ready(function () {
         $("#submit").on("click", function (event) {
             event.preventDefault();
-
-
             // create submission Object 
 
             var submissionObject = {
@@ -402,6 +414,8 @@
             } else {
 
                 // webhook submission
+                $('#hidden-div').toggle();
+                $("#form-container").hide();
                 $.ajax({
                     url: 'https://hooks.zapier.com/hooks/catch/4990402/o1m3qgu/',
                     method: "POST",

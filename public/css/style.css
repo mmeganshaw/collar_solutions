@@ -81,3 +81,7 @@ h3 {
     border-radius: 15px;
     color: white;
 }
+
+#hidden-div {
+    display: none;
+}
