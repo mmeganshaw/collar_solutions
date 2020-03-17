@@ -33,7 +33,7 @@
         <div class="header-overlay">
             <span class="nav">
                 <span>
-                    <img src="images/collar_solutions.png" class="nav-image" alt="">
+                    <img src="images/Solutions_Updated.png" class="nav-image" alt="">
                 </span>
                 <span>
                     <a class="contact" href="#contact"> Contact</a>
@@ -97,7 +97,7 @@
 
     </div>
 
-    <div class="container show-on-large hide-on-med-and-down">
+    <!-- <div class="container show-on-large hide-on-med-and-down">
         <div class="row">
             <div class="col m4 s12 small-container" style="padding: 1rem;">
                 <div style="padding: .5rem;">
@@ -160,6 +160,64 @@
                     </p>
                 </div>
 
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container show-on-large hide-on-med-and-down">
+        <div class="row">
+            <div class="col m4 s12">
+                <h2>
+                    Big Data
+                </h2>
+                <p>
+                    By utilizing over 1000 source verified databases and data sets, Collar is able to identify a
+                    wider breadth of individuals whom are well-qualified to perform the job for which you are
+                    sourcing.
+                    </br>
+                    </br>
+                    These datasets deliver behavioral and psychographic patterns and associations that
+                    help syphon unique skillsets into your hiring funnel. By computationally widening the talent
+                    pool, we are able to deliver more candidates who are not only qualified to perform the job at
+                    hand, but also ready to make a career move.
+                </p>
+
+            </div>
+            <div class="col m4 s12">
+                <h2>
+                    AI
+                </h2>
+                <p>
+                    Our proprietary technology was developed with the ability to learn from past experience. Once
+                    the system has identified specific individuals to fulfill a hiring need, the technology
+                    ‘watches’ as certain individuals make their way through the hiring funnel, and as others syphon
+                    off.
+                    </br>
+                    </br>
+
+                    The system then analyzes the behaviors, psychographics, and demographics relevant to each
+                    candidate so that it can make a better-informed prediction during the next hiring round.
+
+                </p>
+
+            </div>
+            <div class="col m4 s12">
+                <h2>
+                    CME
+                </h2>
+                <p>
+                    Once the data has been cleansed for import, Collar uses an advanced algorithmic matching
+                    technique in order to contact your ideal candidate pools.
+                    SMS.
+                    </br>
+                    </br>
+                    These candidates can be sent real-time
+                    messages on social platforms such as LinkedIn, Facebook, Instagram or Twitter, or
+                    SMS.
+                    By accessing your audience where they spend a majority of their time (social media), Collar is
+                    able to procure candidates with the right skillsets at the right time.
+
+                </p>
             </div>
         </div>
     </div>
@@ -230,7 +288,7 @@
     <!-- large collar image -->
     <div class="container">
         <h2>
-            The Collar Solutions Model
+            Predictive Solutions
         </h2>
         <img src="images/collar_solutions_diagram-03.png" alt="" class="responsive-img">
     </div>
@@ -247,14 +305,9 @@
         <div class="row">
             <form class="col s12">
                 <div class="row">
-                    <div style="border-style: solid; border-radius: 15px; border-color: #37A09C; border-width: 1px; margin-right: 2rem;"
-                        class="input-field col s5 center-align">
-                        <input placeholder="First Name" id="first_name" type="text" class="validate"
-                            style="border-bottom: none;">
-                    </div>
-                    <div style="border-style: solid; border-radius: 15px; border-color: #37A09C; border-width: 1px;"
-                        class="input-field col s6">
-                        <input placeholder="Last Name" id="last_name" type="text" class="validate"
+                    <div style="border-style: solid; border-radius: 15px; border-color: #37A09C; border-width: 1px; margin-right: 4rem;"
+                        class="input-field col s12">
+                        <input placeholder="Full Name" id="full_name" type="text" class="validate"
                             style="border-bottom: none;">
                     </div>
                 </div>
@@ -281,7 +334,7 @@
             </form>
         </div>
         <!-- button -->
-        <div class="row" style="padding-bottom: 1rem; ">
+        <div class="row left-align" style="padding-bottom: 1rem; ">
             <div class="col s12">
                 <button id="submit" style="background-color: #4DC2BD;border-radius: 10px;"
                     class="btn waves-effect waves-light" type="submit" name="action">Submit
@@ -298,7 +351,8 @@
     <div class="container">
         <div class="row">
             <div class="col s12 center-align" style="margin: 3rem;">
-                <img src="images/collar_solutions.png" alt="" class="footer-image">
+                <img src="images/Solutions_Updated.png" alt="" class="footer-image">
+                </br>
                 <div>
                     <a href="https://www.facebook.com/JobsForEveryCollar/"><img src="images/facebook-02.png" alt=""
                             class="responsive-img" style="height: 30px; padding: 1px;"></a>
@@ -330,8 +384,7 @@
             // create submission Object 
 
             var submissionObject = {
-                firstname: $.trim($("#first_name").val()),
-                lastname: $.trim($("#last_name").val()),
+                fullname: $.trim($("#full_name").val()),
                 email: $.trim($("#email").val()),
                 industry: $.trim($("#industry").val()),
                 message: $.trim($("#message").val())
@@ -341,8 +394,8 @@
 
             // check to make sure all fields are filled out
 
-            if (submissionObject.firstname === "" || submissionObject.lastname === "" ||
-                submissionObject.email === "" || submissionObject.industry === "" || submissionObject
+            if (submissionObject.fullname === "" || submissionObject.email === "" || submissionObject
+                .industry === "" || submissionObject
                 .message === "") {
                 alert("Please fill out all of the fields.")
                 console.log("They didn't fill out all out.")
