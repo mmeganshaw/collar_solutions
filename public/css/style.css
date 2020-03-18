@@ -65,6 +65,12 @@ h3 {
     padding-right: 1rem;
 }
 
+.header-inner-mobile {
+    color: white;
+    margin-left: 1rem;
+    padding-right: 1rem;
+}
+
 .blue-container {
     color: white;
     background-color: #4DC2BD;
